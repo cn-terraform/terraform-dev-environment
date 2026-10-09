@@ -1,0 +1,60 @@
+[submodule "terraform-aws-nexus"]
+	path = modules/terraform-aws-nexus
+	url = https://github.com/cn-terraform/terraform-aws-nexus.git
+[submodule "terraform-aws-sonarqube"]
+	path = modules/terraform-aws-sonarqube
+	url = https://github.com/cn-terraform/terraform-aws-sonarqube.git
+[submodule "terraform-aws-ecs-fargate-scheduled-task"]
+	path = modules/terraform-aws-ecs-fargate-scheduled-task
+	url = https://github.com/cn-terraform/terraform-aws-ecs-fargate-scheduled-task.git
+[submodule "terraform-aws-flow-log"]
+	path = modules/terraform-aws-flow-log
+	url = https://github.com/cn-terraform/terraform-aws-flow-log.git
+[submodule "terraform-aws-jenkins"]
+	path = modules/terraform-aws-jenkins
+	url = https://github.com/cn-terraform/terraform-aws-jenkins.git
+[submodule "terraform-aws-s3-static-website"]
+	path = modules/terraform-aws-s3-static-website
+	url = https://github.com/cn-terraform/terraform-aws-s3-static-website.git
+[submodule "terraform-aws-ecs-cluster"]
+	path = modules/terraform-aws-ecs-cluster
+	url = https://github.com/cn-terraform/terraform-aws-ecs-cluster.git
+[submodule "terraform-aws-cloudwatch-logs"]
+	path = modules/terraform-aws-cloudwatch-logs
+	url = https://github.com/cn-terraform/terraform-aws-cloudwatch-logs.git
+[submodule "terraform-aws-route53"]
+	path = modules/terraform-aws-route53
+	url = https://github.com/cn-terraform/terraform-aws-route53.git
+[submodule "terraform-aws-ecs-fargate"]
+	path = modules/terraform-aws-ecs-fargate
+	url = https://github.com/cn-terraform/terraform-aws-ecs-fargate.git
+[submodule "terraform-aws-ecs-alb"]
+	path = modules/terraform-aws-ecs-alb
+	url = https://github.com/cn-terraform/terraform-aws-ecs-alb.git
+[submodule "terraform-aws-ci-cd-system"]
+	path = modules/terraform-aws-ci-cd-system
+	url = https://github.com/cn-terraform/terraform-aws-ci-cd-system.git
+[submodule "terraform-module-template"]
+	path = modules/terraform-module-template
+	url = https://github.com/cn-terraform/terraform-module-template.git
+[submodule "terraform-aws-ec2-asg"]
+	path = modules/terraform-aws-ec2-asg
+	url = https://github.com/cn-terraform/terraform-aws-ec2-asg.git
+[submodule "terraform-aws-ecs-service-autoscaling"]
+	path = modules/terraform-aws-ecs-service-autoscaling
+	url = https://github.com/cn-terraform/terraform-aws-ecs-service-autoscaling.git
+[submodule "terraform-aws-ecs-fargate-service"]
+	path = modules/terraform-aws-ecs-fargate-service
+	url = https://github.com/cn-terraform/terraform-aws-ecs-fargate-service.git
+[submodule "terraform-aws-logs-s3-bucket"]
+	path = modules/terraform-aws-logs-s3-bucket
+	url = https://github.com/cn-terraform/terraform-aws-logs-s3-bucket.git
+[submodule "terraform-aws-ecs-fargate-task-definition"]
+	path = modules/terraform-aws-ecs-fargate-task-definition
+	url = https://github.com/cn-terraform/terraform-aws-ecs-fargate-task-definition.git
+[submodule "terraform-aws-networking"]
+	path = modules/terraform-aws-networking
+	url = https://github.com/cn-terraform/terraform-aws-networking.git
+[submodule "terraform-aws-nomad"]
+	path = modules/terraform-aws-nomad
+	url = https://github.com/cn-terraform/terraform-aws-nomad.git
