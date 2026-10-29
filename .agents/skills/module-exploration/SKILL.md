@@ -11,4 +11,6 @@ description: Explore one Terraform module in this umbrella repository before mak
 4. Summarize purpose from implementation and README, inputs and defaults from variable declarations, outputs from output declarations, AWS resources, internal/external module sources, examples, supported Terraform/provider constraints, and validation commands.
 5. Compare generated README tables with variables/outputs and flag discrepancies or placeholder text. Mark missing evidence as unknown instead of inferring behavior.
 
-Use paths and relevant block names in findings so another developer can verify them. This skill is read-only unless the user also requested an edit. Do not initialize absent submodules, fetch updates, plan against an AWS account, or modify files as part of exploration alone.
+Use paths and relevant block names in findings so another developer can verify them. This skill is read-only unless the user also requested an edit. Do not initialize absent submodules, fetch updates, plan against an AWS account, or modify files as part of exploration alone. Never create/switch branches, stage/commit, tag, or publish; the user handles all branching and release operations.
+
+When repository validation is needed, use pre-commit from each repository root: run `pre-commit install`, then `pre-commit run --all-files`.

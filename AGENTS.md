@@ -11,12 +11,18 @@ This is an umbrella repository for the `cn-terraform` Terraform modules. The roo
 3. Check both repository levels with `git -C <module-path> status --short --branch` and `git status --short --branch`. Preserve existing user changes.
 4. Keep module implementation, tests, docs, and releases within that module repository. The umbrella repository should normally record only a submodule gitlink change when its pinned commit changes.
 
+## User-owned Git and release operations
+
+- The user owns all branching and release operations. Work only on the currently checked-out branch; do not create or switch branches, commit, create or move tags, publish releases, or publish module versions.
+- Do not stage changes unless explicitly asked. Leave edits reviewable in the working tree and report the current module HEAD and root gitlink state; do not imply that changes are committed or released.
+- Apply this rule to the umbrella repository and every module submodule. Preserve pre-existing staged, unstaged, and untracked work.
+
 ## Submodule and Git rules
 
 - Do not run `git submodule update --remote`, `git submodule foreach git pull`, or otherwise advance unrelated modules. The root gitlink is an intentional pin.
 - Never assume the submodule's checked-out branch, HEAD, or latest tag is the desired target. Inspect it first. A detached HEAD is normal for consumers of submodules.
 - Do not edit a nested module's `.git` file, its remote, branch, tags, or release configuration unless the task specifically requires it.
-- When asked to change module code, make the change in the module repository. Report the module commit and whether the umbrella gitlink also changed.
+- When asked to change module code, make the change in the module repository. Report the module HEAD and whether the umbrella gitlink also changed.
 - Avoid root-level Terraform commands: the umbrella repository has no Terraform root module. Run validation from the module root or its examples as configured by that module.
 
 ## Terraform and documentation conventions
@@ -29,7 +35,7 @@ This is an umbrella repository for the `cn-terraform` Terraform modules. The roo
 
 ## Validation
 
-There is no umbrella-level Terraform validation command. Use the target module's own checks, normally its configured pre-commit hooks and CI workflow. Inspect the actual hook/workflow before choosing commands; versions and checks vary across modules. Validate examples from their own directories if their workflow does so. Do not run an AWS apply or any command that creates/changes cloud resources unless the user explicitly requested it.
+Use pre-commit as the validation entry point for repository checks. In each repository being validated, run `pre-commit install` followed by `pre-commit run --all-files`; for a submodule, run those commands from that module's root. The umbrella repository has no Terraform root, but its repository-level hooks can still be run from the umbrella root. Inspect hook output and address safe, relevant findings. Do not run an AWS apply or any command that creates/changes cloud resources unless the user explicitly requested it.
 
 When validation is not requested or cannot be run, make that clear in the handoff. Do not claim that a Terraform module was validated if only formatting, static inspection, or documentation checks were performed.
 

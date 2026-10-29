@@ -2,6 +2,8 @@
 
 This is a snapshot of the 20 submodules configured in `.gitmodules` and checked out when this catalog was prepared. Module directories are independent repositories, not Terraform child modules in a shared root. A module's README and code are authoritative; descriptions below are short orientation hints.
 
+For a prerequisite-first sequence and dependency graph derived from module source blocks, see [MODULE_DEPENDENCY_ORDER.md](MODULE_DEPENDENCY_ORDER.md).
+
 ## Modules
 
 | Area | Module | What it provides |

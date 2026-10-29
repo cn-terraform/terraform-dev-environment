@@ -16,7 +16,7 @@ If you already cloned the umbrella repository without submodules:
 git submodule update --init --recursive
 ```
 
-See [MODULES_OVERVIEW.md](MODULES_OVERVIEW.md) for the module inventory. See [AGENTS.md](AGENTS.md) for repository boundaries and agent workflows. Claude Code also reads [CLAUDE.md](CLAUDE.md); reusable Codex and Claude Code skills are in `.agents/skills/` and `.claude/skills/`.
+See [MODULES_OVERVIEW.md](MODULES_OVERVIEW.md) for the module inventory and [MODULE_DEPENDENCY_ORDER.md](MODULE_DEPENDENCY_ORDER.md) for the dependency graph and task order. See [AGENTS.md](AGENTS.md) for repository boundaries and agent workflows. Claude Code also reads [CLAUDE.md](CLAUDE.md); reusable Codex and Claude Code skills are in `.agents/skills/` and `.claude/skills/`.
 
 ## Working on a module
 
